@@ -1,15 +1,18 @@
 class NotesModel {
-
-// A constructor, to give initial arguments.
   constructor(array) {
     this.array = [];
   }
-    
-
-// A method.
   getNotes() {
     return this.array;
-};
+  };
+
+  addNote(task) {
+    this.array.push(task);
+  };
+
+  reset() {
+    this.array.length = 0;
+  };
 }
 
 module.exports = NotesModel;
